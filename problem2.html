@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <TITLE>age asker</TITLE>
+</head>
+<body>
+
+  <div id = "output"></div>
+  <script>
+    let first = prompt("Enter your first name:");
+    let last = prompt("Enter your last name:");
+    let birthyear = prompt("Enter your birth year:");
+
+let currentYear = new Date().getFullYear();
+let age = currentYear - parseInt(birthyear);
+
+let message = "Hello " + first + last + ", " + birthyear + ". how does it feel to be " + age + "?";
+
+document.getElementById("output").innerText = message;
+  </script>
+</body>
